@@ -8,4 +8,10 @@ class RestaurantsController < ApplicationController
     @review = Review.new  # <-- You need this now.  end
   end
 
+  def destroy
+    @restaurant = Restaurant.find(params[:id])
+    @restaurant.destroy
+  end
+
+
 end

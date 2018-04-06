@@ -9,6 +9,7 @@ function addReview(reviewHTML) {
   const reviews = document.getElementById('reviews');
   reviews.insertAdjacentHTML('beforeend', reviewHTML);
 }
+// o j antes do do render faz que as strings fiquem  padrão para um javascript
 
 <% if @review.errors.any? %>
   refreshForm('<%= j render "reviews/form", restaurant: @restaurant, review: @review %>');
